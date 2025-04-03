@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros Más Vendidos</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #e0f4fb;
+        }
+        .header {
+            background: linear-gradient(90deg, rgb(0, 34, 102) 0%, rgb(0, 76, 153) 35%, rgba(0, 119, 204, 0.8) 100%);
+            color: white;
+            padding: 30px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            flex-direction: column;
+            border-radius: 5px;
+        }
+        .header img {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 80px;
+            height: auto;
+        }
+        .nav {
+            background-color: #005ba1;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .nav a {
+            color: aliceblue;
+        }
+        .nav div {
+            display: inline-block;
+            color: white;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .main-content {
+            width: 100%;
+            background-color: #cde4f2;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .main-content h1 {
+            font-size: 2.5em;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .book {
+            text-align: center;
+            padding: 10px;
+        }
+        .book img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .book-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+        .pdf-link {
+            color: #005ba1;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .pdf-link:hover {
+            text-decoration: underline;
+        }
+        .back-button {
+            margin-top: 40px;
+            padding: 10px 20px;
+            background-color: #005ba1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .back-button:hover {
+            background-color: #004080;
+        }
+        .footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            font-size: 14px;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/imagen1.png" alt="Logo ITH">
+            <div>Apóstol Guillermo Maldonado</div>
+        </div>
+        <br>
+        <div class="nav">
+            <div><a href="index.html">Inicio</a></div>
+            <div><a href="Biografia.html">Biografía</a></div>
+            <div><a href="Ministerio.html">Ministerio</a></div>
+            <div><a href="Enseñanzas.html">Enseñanzas</a></div>
+            <div><a href="Eventos.html">Eventos</a></div>
+            <div><a href="Contacto.html">Contacto</a></div>
+        </div>
+        <div class="content-wrapper">
+            <div class="main-content">
+                <h1>Libros Más Vendidos</h1>
+                <div class="books-grid">
+                    <div class="book">
+                        <img src="img/Porque.jpeg" alt="Libro 1">
+                        <div class="book-title">¿Por qué creer en Jesús?</div>
+                        <a class="pdf-link" href="pdf/Por que creer en Jesus - Apostol Guillermo Maldonado. 2015.pdf" target="_blank">Abrir en PDF</a>
+                    </div>
+                    <div class="book">
+                        <img src="img/creados.jpg" alt="Libro 2">
+                        <div class="book-title">Creados para un Propósito</div>
+                        <a class="pdf-link" href="pdf/Creados para un proposito - Apostol Guillermo Maldonado.pdf" target="_blank">Abrir en PDF</a>
+                    </div>
+                    <div class="book">
+                        <img src="img/Gloria.jpg" alt="Libro 3">
+                        <div class="book-title">La Gloria de Dios</div>
+                        <a class="pdf-link" href="pdf/La Gloria de Dios - Apostol Guillermo Maldonado..pdf" target="_blank">Abrir en PDF</a>
+                    </div>
+                    <div class="book">
+                        <img src="img/encuentro.jpg" alt="Libro 4">
+                        <div class="book-title">Encuentro Divino con el Espíritu Santo</div>
+                        <a class="pdf-link" href="pdf/Encuentro Divino con el Espiritu Santo - Apostol Guillermo Maldonado.pdf" target="_blank">Abrir en PDF</a>
+                    </div>
+                    <div class="book">
+                        <img src="img/transformacion.jpeg" alt="Libro 5">
+                        <div class="book-title">Transformación Sobrenatural</div>
+                        <a class="pdf-link" href="pdf/Transformacion Sobrenatural - Apostol Guillermo Maldonado. 2014.pdf" target="_blank">Abrir en PDF</a>
+                    </div>
+                    <div class="book">
+                        <img src="img/estres.jpg" alt="Libro 6">
+                        <div class="book-title">Una Vida Libre de Estrés</div>
+                        <a class="pdf-link" href="pdf/Una vida libre de estres - Apostol Guillermo Maldonado. 2019.pdf" target="_blank">Abrir en PDF</a>
+                    </div>
+                </div>
+                <button class="back-button" onclick="location.href='Biografia.html'">Regresar a Biografía</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer"><p>Derechos Reservados Josías Misael Chacón Estrada III BTP Robotica S-10&copy; 2025</p></div>
+        </div>
+    </div>
+</body>
+</html>
